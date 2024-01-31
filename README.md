@@ -12,6 +12,8 @@ Jmh/run -i 10 -wi 10 -f1 -t1 ".*DmnListFilterBench"
 
 On 9.44.0.Final, with lists of 10 elements:
 
+This benchmark demonstrates the performance of various list filter expressions. Expressions that use names outside the list item's root context have high overhead.
+
 ```
 [info] Benchmark                               Mode  Cnt    Score   Error   Units
 [info] DmnListFilterBench.evaluate1Function   thrpt   10   15.985 ± 0.441  ops/ms
